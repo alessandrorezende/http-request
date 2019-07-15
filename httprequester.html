@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Http Requester</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <!--Import Google Icon Font-->
+  <link rel="stylesheet" href="css/libs/google-fonts.css" />
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="css/libs/materialize.min.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+<div id="div-tempo">
+  <div class="col s2 m1">
+    <div class="card grey lighten-4 hoverable">
+      <div class="card-content gray-text">
+        <span class="card-title">Click Interval</span>
+        <section class="section-time" >
+            <span>Minutes:</span><input type="number" id="minutes" value="0" />
+            <span>Seconds:</span><input type="number" id="seconds" value="40" />
+            <span>Milliseconds:</span><input type="number" id="milliseconds" value="0" />
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="div-requester">
+  <div class="col s2 m1">
+    <div class="card grey lighten-4 hoverable">
+      <div class="card-content gray-text">
+        <span class="card-title">Http Requester</span>
+          <section class="section-url" >
+              <div>
+                <span>What's URL:</span>
+                <input type="text" id="url" >
+              </div>
+              <div>
+                <a href="#" class="btn-floating btn-large waves-effect waves-light red">
+                  <i class="material-icons">pause_circle_outline</i>
+                </a>
+                <a href="#" class="btn-floating btn-large waves-effect waves-light green">
+                  <i class="material-icons">play_circle_outline</i>
+                </a>
+              </div>
+          </section>
+          <section class="section-radio">
+            <!--<label for="radioContent"><input type="radio" id="radioContent" value="0" >Content</label>
+            <label for="radioFile"><input type="radio" id="radioFile" value="1" >File</label> -->
+            <div class="row" layout="row">
+              <input type="text" id="filename">
+              <div class="card-action">
+                <a href="#" id="browse-file">Browse...</a>
+              </div>
+            </div>
+          </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="div-response">
+  <div class="col s2 m1">
+    <div class="card grey lighten-4 hoverable">
+      <div class="card-content gray-text">
+        <span class="card-title">Response</span>
+        <section class="section-response" >
+              <table class="responsive-table highlight centered">
+                  <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Item Name</th>
+                        <th>Item Price</th>
+                    </tr>
+                  </thead>
+
+                  <tbody  >
+                    <tr>
+                      <td>Alvin</td>
+                      <td>Eclair</td>
+                      <td>$0.87</td>
+                    </tr>
+                    <tr>
+                      <td>Alan</td>
+                      <td>Jellybean</td>
+                      <td>$3.76</td>
+                    </tr>
+                    <tr>
+                      <td>Jonathan</td>
+                      <td>Lollipop</td>
+                      <td>$7.00</td>
+                    </tr>
+                  </tbody>
+              </table>
+        </section>
+      </div>
+      <div class="card-action">
+        <a href="#" id="btn-stop-request">Stop Time</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="div-content">
+  <div class="col s2 m1">
+    <div class="card grey lighten-4 hoverable">
+      <div class="card-content gray-text">
+        <span class="card-title">Content</span>
+          <textarea id="content" class="textarea-content" rows="50" cols="40" multiline="true"> </textarea>
+    </div>
+  </div>
+</div>
+
+<div id="div-history">
+  <div class="col s2 m1">
+    <div class="card grey lighten-4 hoverable">
+      <div class="card-content gray-text">
+        <span class="card-title">History</span>
+        <section class="section-history" >
+            <table class="responsive-table highlight centered">
+                <thead>
+                  <tr>
+                      <th>Name</th>
+                      <th>Item Name</th>
+                      <th>Item Price</th>
+                  </tr>
+                </thead>
+
+                <tbody  >
+                  <tr>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>$0.87</td>
+                  </tr>
+                  <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>$3.76</td>
+                  </tr>
+                  <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>$7.00</td>
+                  </tr>
+                </tbody>
+            </table>
+        </section>
+      </div>
+      <div class="card-action">
+        <a href="#" id="btn-stop-request">Clear</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer id="div-footer" class="page-footer hoverable">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2019 Copyright Alessandro Rezende
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+</footer>
+
+
+<!--JavaScript at end of body for optimized loading-->
+<script src="js/lib/jquery.js"></script>
+<script src="js/httprequester.js"></script>
+<script src="js/HTTP.js"></script>
+<script src="js/Base64.js"></script>
+<script src="js/Response.js"></script>
+</body>
+</html>

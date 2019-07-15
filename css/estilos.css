@@ -1,0 +1,78 @@
+body, html{
+  height: 100%;
+}
+body{
+  background-color: white;
+}
+
+#div-tempo{
+  float: left;
+  width: 10%;
+}
+
+#div-requester{
+  float: left;
+  width: 50%;
+  padding-left: 14px;
+  padding-right: 14px;
+
+}
+
+.section-time{
+  padding-top: 32px;
+  padding-bottom:30px;
+}
+.section-url{
+  padding-top: 30px;
+}
+.section-response{
+  padding-top: 38px;
+}
+
+.textarea-content{
+  font-size: 20px;
+  height: 300px;
+  border: 1px solid;
+  background-color: white;
+}
+
+#div-response{
+  float: right;
+  width:40%;
+}
+
+#div-content{
+  clear:both; /*retira fload da direita e esquerda*/
+}
+
+#div-history {
+  clear:both; /*retira fload da direita e esquerda*/
+}
+
+#div-footer{
+  clear:both; /*retira fload da direita e esquerda*/
+  background-color: grey;
+}
+
+/*
+.frase{
+  font-size: 20px;
+}
+
+
+.campo-desativado{
+  background-color: lightgray;
+}
+
+.icones{
+  vertical-align: middle;
+}
+
+.borda-verde{
+  border: 3px solid green;
+}
+
+.borda-vermelha{
+  border: 3px solid red;
+}
+*/
